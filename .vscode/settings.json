@@ -1,0 +1,15 @@
+{
+  // 下面这三个是关键配置
+  "editor.formatOnSave": true,
+  // "eslint.autoFixOnSave": true, 这个设置被废弃了，使用下面的editor.codeActionsOnSave的配置
+  "editor.codeActionsOnSave": {
+      // "source.fixAll": true,
+      "source.fixAll.eslint": true
+  },
+  "eslint.format.enable": true,
+  "[javascript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+      // 这里也可以使用 "editor.defaultFormatter": "esbenp.prettier-vscode"，但是要保证安装了prettier插件
+      // 这样使用快捷键格式化 command + k \ command + f，可以进行选择部分代码进行格式化
+  },
+}
