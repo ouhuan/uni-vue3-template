@@ -46,6 +46,7 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3040820220424001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3040820220424001",
     "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "stylelint-order": "^5.0.0",
     "vue": "^3.2.37",
     "vue-i18n": "^9.1.9",
     "vuex": "^4.0.2"
@@ -65,8 +66,15 @@
     "eslint-plugin-vue": "^9.3.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.4",
     "sass": "^1.54.0",
     "sass-loader": "^13.0.2",
+    "stylelint": "^14.9.1",
+    "stylelint-config-recommended-scss": "^7.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-scss": "^4.3.0",
     "typescript": "^4.7.4",
     "vite": "^2.9.14"
   },
@@ -75,7 +83,11 @@
       "eslint --fix"
     ],
     "*.vue": [
-      "eslint --fix"
+      "eslint --fix",
+      "stylelint --fix"
+    ],
+    "*.{less,scss}": [
+      "stylelint --fix"
     ]
   }
 }
