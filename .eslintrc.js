@@ -22,6 +22,7 @@ module.exports = defineConfig({
     '@vue/typescript/recommended'
   ],
   rules: {
+    'no-undef': 'off',
     semi: ['error', 'always'],
     'vue/multi-word-component-names': 'off',
     'vue/script-setup-uses-vars': 'error',
